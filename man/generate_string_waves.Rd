@@ -6,21 +6,19 @@
 \usage{
 generate_string_waves(
   num_waves,
-  stability_n,
-  stability_sd,
+  num_colors,
   wobbliness,
   frequency,
-  frame = "points"
+  stability_n,
+  stability_sd,
+  loess_span,
+  anchor = F,
+  frame = "square",
+  seed
 )
 }
 \arguments{
-\item{stability_n}{an integer value >=1, higher values will make the waves more
-stable; technically, this is the number of data points sampled to generate
-each wave}
-
-\item{stability_sd}{a numeric value >=0, lower values will make the waves
-more stable; technically, this is the standard deviation of the error applied
-to the output of each wave function}
+\item{num_waves}{an integer value >=1, the number of waves desired}
 
 \item{wobbliness}{an integer value >=1, higher values will make the waves
 more wobbly (i.e. having peaks a trough of variable height); technically
@@ -31,8 +29,25 @@ the final wave function}
 of the wave function; technically this is the passed to the frequency argument
 of the random_sine_wave() function (see random_sine_wave() for details)}
 
-\item{frame}{'points', 'circle' or 'none'; specifies the frame desired for
-each artwork; defaults to 'points' because they look kind of cool.}
+\item{stability_n}{an integer value >=1, higher values will make the waves more
+stable; technically, this is the number of data points sampled to generate
+each wave}
+
+\item{stability_sd}{a numeric value >=0, lower values will make the waves
+more stable; technically, this is the standard deviation of the error applied
+to the output of each wave function}
+
+\item{loess_span}{a numeric value between 0-1, lower numbers will make each wave
+more "wiggly" when fitting the underlying points, values < 0.3 seem to throw an
+error}
+
+\item{anchor}{a boolean value, set to true to make the waves converge to
+anchor points}
+
+\item{frame}{'points', 'circle', 'square', or 'none'; specifies the frame desired for
+each artwork}
+
+\item{seed}{a numeric value, the seed to initialize psuedo-randomness}
 }
 \value{
 a random work of art as a ggplot object

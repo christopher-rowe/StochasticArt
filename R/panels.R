@@ -2,12 +2,18 @@
 #'
 #' @param num_panels the number of panels in the artwork; if unspecified, a value
 #' will be chosen randomly
+#' @param seed a numeric value, the seed to initialize psuedo-randomness
 #'
 #' @export
 #'
 #' @return a random work of art as a ggplot object
 #'
-generate_panels = function(num_panels){
+generate_panels = function(num_panels, seed){
+
+  # set & print seed
+  if(missing(seed)){seed = sample(1:1e8, 1)}
+  set.seed(seed)
+  message(paste('Seed:', seed))
 
   # randomly choose parameter values if not specified
   if(missing(num_panels)){num_panels = sample(1:50, 1)}

@@ -11,13 +11,19 @@
 #' if unspecified, a value will be chosen randomly
 #' @param max_rect_size a numberic value between 0 and 1, the maximum size of
 #' each rectangle; if unspecified, a value will be chosen randomly
+#' @param seed a numeric value, the seed to initialize psuedo-randomness
 #'
 #' @export
 #'
 #' @return a random work of art as a ggplot object
 #'
 generate_lines_and_rectangles = function(num_lines, p_v_line, max_line_size,
-                                         num_rect, max_rect_size){
+                                         num_rect, max_rect_size, seed){
+
+  # set & print seed
+  if(missing(seed)){seed = sample(1:1e8, 1)}
+  set.seed(seed)
+  message(paste('Seed:', seed))
 
   # randomly choose parameter values if not specified
   if(missing(num_lines)){num_lines = sample(250:2000, 1)}

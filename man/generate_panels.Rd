@@ -4,11 +4,13 @@
 \alias{generate_panels}
 \title{Generate panels}
 \usage{
-generate_panels(num_panels)
+generate_panels(num_panels, seed)
 }
 \arguments{
 \item{num_panels}{the number of panels in the artwork; if unspecified, a value
 will be chosen randomly}
+
+\item{seed}{a numeric value, the seed to initialize psuedo-randomness}
 }
 \value{
 a random work of art as a ggplot object

@@ -9,7 +9,8 @@ generate_lines_and_rectangles(
   p_v_line,
   max_line_size,
   num_rect,
-  max_rect_size
+  max_rect_size,
+  seed
 )
 }
 \arguments{
@@ -28,6 +29,8 @@ if unspecified, a value will be chosen randomly}
 
 \item{max_rect_size}{a numberic value between 0 and 1, the maximum size of
 each rectangle; if unspecified, a value will be chosen randomly}
+
+\item{seed}{a numeric value, the seed to initialize psuedo-randomness}
 }
 \value{
 a random work of art as a ggplot object
