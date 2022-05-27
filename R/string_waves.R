@@ -86,12 +86,11 @@ generate_string_waves = function(num_waves, num_colors, wobbliness, frequency,
     )
 
   # generate and append anchors so all waves converge, if specified
+  y_anchor_x_min = all_data %>% dplyr::filter(x==0) %>% dplyr::pull(y) %>% mean()
+  y_anchor_x_max = all_data %>% dplyr::filter(x==1) %>% dplyr::pull(y) %>% mean()
   if(anchor){
 
     n_anchor = 100
-    y_anchor_x_min = all_data %>% dplyr::filter(x==0) %>% dplyr::pull(y) %>% mean()
-    y_anchor_x_max = all_data %>% dplyr::filter(x==1) %>% dplyr::pull(y) %>% mean()
-
     anchor_data = dplyr::tibble(
       x = c(rep(-0.2, num_waves*n_anchor), rep(1.2, num_waves*n_anchor)),
       y = c(rep(y_anchor_x_min,num_waves*n_anchor), rep(y_anchor_x_max,num_waves*n_anchor)),
