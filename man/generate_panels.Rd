@@ -4,11 +4,15 @@
 \alias{generate_panels}
 \title{Generate panels}
 \usage{
-generate_panels(num_panels, seed)
+generate_panels(num_panels, square = TRUE, single_color = TRUE, seed)
 }
 \arguments{
 \item{num_panels}{the number of panels in the artwork; if unspecified, a value
 will be chosen randomly}
+
+\item{square}{a boolean value, set to TRUE for the artwork to be square}
+
+\item{single_color}{a boolean value, set to TRUE to use a single color}
 
 \item{seed}{a numeric value, the seed to initialize psuedo-randomness}
 }
