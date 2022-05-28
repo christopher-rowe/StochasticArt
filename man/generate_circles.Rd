@@ -13,7 +13,7 @@ generate_circles(
   max_concentric_circles = 20,
   equal_concentric_spacing,
   num_colors,
-  frame = T,
+  frame = F,
   seed
 )
 }

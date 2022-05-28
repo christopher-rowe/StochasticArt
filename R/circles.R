@@ -63,7 +63,7 @@ generate_circles = function(num_circles, global_max_r,
                             circle_gap_p, max_alpha, min_concentric_circles = 1,
                             max_concentric_circles = 20,
                             equal_concentric_spacing, num_colors,
-                            frame = T, seed){
+                            frame = F, seed){
 
   # set & print seed
   if(missing(seed)){seed = sample(1:1e8, 1)}

@@ -29,10 +29,14 @@ generate_web = function(n=50, seed){
     dplyr::select(-id) %>%
     dplyr::filter(!(x==xend))
 
-  ggplot() +
-    geom_rect(aes(xmin=-0.2, xmax=1.2, ymin=-0.2, ymax=1.2), fill = 'black') +
-    geom_curve(data=line_data, aes(x=x,y=y,xend=xend,yend=yend),
-               alpha = 1, lwd = 0.1, curvature = runif(1), col = 'white') +
+  ggplot2::ggplot() +
+    ggplot2::geom_rect(
+      ggplot2::aes(xmin=-0.2, xmax=1.2, ymin=-0.2, ymax=1.2), fill = 'black'
+      ) +
+    ggplot2::geom_curve(
+      data=line_data, ggplot2::aes(x=x,y=y,xend=xend,yend=yend),
+      alpha = 1, lwd = 0.1, curvature = runif(1), col = 'white'
+      ) +
     xlim(-0.2, 1.2) +
     ylim(-0.2, 1.2) +
     ggplot2::theme(aspect.ratio = 1,
@@ -48,7 +52,7 @@ generate_web = function(n=50, seed){
                    panel.grid.major = ggplot2::element_blank(),
                    panel.grid.minor = ggplot2::element_blank(),
                    plot.background = ggplot2::element_blank(),
-                   plot.margin = unit(c(0, 0, 0, 0), "cm"))
+                   plot.margin = ggplot2::unit(c(0, 0, 0, 0), "cm"))
 
 
 }
