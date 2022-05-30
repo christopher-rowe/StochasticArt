@@ -73,8 +73,8 @@ generate_lines_and_polygons = function(num_shapes, background = 'black', seed){
 #'
 generate_points_and_edges = function(n_points, n_edges){
   point_data = dplyr::tibble(
-    x = rbeta(n=n,sample(1:10,1), sample(1:10,1)),
-    y = rbeta(n=n,sample(1:10,1), sample(1:10,1)),
+    x = rbeta(n=n_points,sample(1:10,1), sample(1:10,1)),
+    y = rbeta(n=n_points,sample(1:10,1), sample(1:10,1)),
     id = 1
   )
 
@@ -88,7 +88,7 @@ generate_points_and_edges = function(n_points, n_edges){
     dplyr::mutate(dist = norm(c(xend-x, yend-y), type = '2')) %>%
     dplyr::filter(!(x==xend)) %>%
     dplyr::group_by(x, y) %>%
-    dplyr::slice_min(dist, n = edges) %>%
+    dplyr::slice_min(dist, n = n_edges) %>%
     dplyr::rowwise() %>%
     dplyr::mutate(
       alpha = norm(c(0.5,0.5), type = '2') - min(norm(c(0.5,0.5) - c(x,y), type='2'),

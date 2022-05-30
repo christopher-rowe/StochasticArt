@@ -2,6 +2,7 @@
 
 export("%>%")
 export(generate_circles)
+export(generate_fabric)
 export(generate_lines_and_polygons)
 export(generate_lines_and_rectangles)
 export(generate_panels)
