@@ -107,6 +107,8 @@
 #' @param n_points an integer value, number of points
 #' @param distribution 'beta', 'uniform', or 'normal'
 #'
+#' @export
+#'
 #' @return a random work of art as a ggplot object
 #'
 create_voronoi = function(n_points, distribution){

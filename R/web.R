@@ -37,8 +37,8 @@ generate_web = function(n=50, seed){
       data=line_data, ggplot2::aes(x=x,y=y,xend=xend,yend=yend),
       alpha = 1, lwd = 0.1, curvature = runif(1), col = 'white'
       ) +
-    xlim(-0.2, 1.2) +
-    ylim(-0.2, 1.2) +
+    ggplot2::xlim(-0.2, 1.2) +
+    ggplot2::ylim(-0.2, 1.2) +
     ggplot2::theme(aspect.ratio = 1,
                    axis.line = ggplot2::element_blank(),
                    axis.text.x = ggplot2::element_blank(),

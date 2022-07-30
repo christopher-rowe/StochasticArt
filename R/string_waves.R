@@ -7,7 +7,7 @@
 #' the final wave function
 #' @param frequency a numberic value >= 0, higher values will increase the frequency
 #' of the wave function; technically this is the passed to the frequency argument
-#' of the random_sine_wave() function (see random_sine_wave() for details)
+#' of the apply_random_sine_wave() function (see apply_random_sine_wave() for details)
 #' @param stability_n an integer value >=1, higher values will make the waves more
 #' stable; technically, this is the number of data points sampled to generate
 #' each wave
@@ -82,7 +82,7 @@ generate_string_waves = function(num_waves, num_colors, wobbliness, frequency,
       )
     ) %>%
     dplyr::mutate(
-      y = random_sine_wave(x, wobbliness, frequency) + rnorm(n=(stability_n*num_waves),mean=0,sd=stability_sd)
+      y = apply_random_sine_wave(x, wobbliness, frequency) + rnorm(n=(stability_n*num_waves),mean=0,sd=stability_sd)
     )
 
   # generate and append anchors so all waves converge, if specified

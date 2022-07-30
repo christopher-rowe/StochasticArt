@@ -27,7 +27,7 @@ the final wave function}
 
 \item{frequency}{a numberic value >= 0, higher values will increase the frequency
 of the wave function; technically this is the passed to the frequency argument
-of the random_sine_wave() function (see random_sine_wave() for details)}
+of the apply_random_sine_wave() function (see apply_random_sine_wave() for details)}
 
 \item{stability_n}{an integer value >=1, higher values will make the waves more
 stable; technically, this is the number of data points sampled to generate

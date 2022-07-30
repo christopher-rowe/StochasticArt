@@ -1,3 +1,12 @@
+#' Get a random color pool
+#'
+#' @param num_colors number of colors desired
+#'
+#' @export
+#'
+#' @return a vector of adjacent hex codes
+#'
+
 get_random_color_pool = function(num_colors){
 
   # randomly pick a color
