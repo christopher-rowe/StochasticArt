@@ -87,10 +87,10 @@ generate_lines_and_rectangles = function(num_lines, p_v_line, max_line_size,
 
   # drop lines and rectanges that extend out of bounds
   line_data = line_data %>%
-    dplyr::filter(dplyr::across(.fns = ~ .x >= 0 & .x <= 1))
+    dplyr::filter(dplyr::if_all(.fns = ~ .x >= 0 & .x <= 1))
 
   rect_data = rect_data %>%
-    dplyr::filter(dplyr::across(.fns = ~ .x >= 0 & .x <= 1))
+    dplyr::filter(dplyr::if_all(.fns = ~ .x >= 0 & .x <= 1))
 
   # randomly pick a color pallete & assign line and rectange colors
   color_pool = get_random_color_pool(2)
