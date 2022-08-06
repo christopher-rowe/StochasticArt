@@ -39,50 +39,50 @@ output changes. And even better, check out the code underlying each of
 the functions!
 
 ``` r
-generate_fabric()
-#> Seed: 3258269
+generate_fabric(seed=53266553)
+#> Seed: 53266553
 ```
 
 <img src="man/figures/README-example1-1.png" style="display: block; margin: auto;" />
 
 ``` r
-generate_lines_and_polygons()
-#> Seed: 11741098
+generate_lines_and_polygons(seed=83205155)
+#> Seed: 83205155
 ```
 
 <img src="man/figures/README-example2-1.png" style="display: block; margin: auto;" />
 
 ``` r
-generate_perception_matrix()
-#> Seed: 25296978
+generate_perception_matrix(seed=58283814)
+#> Seed: 58283814
 ```
 
 <img src="man/figures/README-example3-1.png" style="display: block; margin: auto;" />
 
 ``` r
-generate_lines_and_rectangles()
-#> Seed: 49034908
+generate_lines_and_rectangles(seed=60828695)
+#> Seed: 60828695
 ```
 
 <img src="man/figures/README-example4-1.png" style="display: block; margin: auto;" />
 
 ``` r
-generate_panels()
-#> Seed: 96670918
+generate_panels(seed=8694671)
+#> Seed: 8694671
 ```
 
 <img src="man/figures/README-example5-1.png" style="display: block; margin: auto;" />
 
 ``` r
-generate_circles()
-#> Seed: 59640680
+generate_circles(seed=50942804)
+#> Seed: 50942804
 ```
 
 <img src="man/figures/README-example6-1.png" style="display: block; margin: auto;" />
 
 ``` r
-generate_string_waves()
-#> Seed: 54621635
+generate_string_waves(frame='points', seed=69097986)
+#> Seed: 69097986
 ```
 
 <img src="man/figures/README-example7-1.png" style="display: block; margin: auto;" />
