@@ -40,28 +40,28 @@ the functions!
 
 ``` r
 generate_fabric()
-#> Seed: 54418691
+#> Seed: 78846757
 ```
 
 <img src="man/figures/README-example1-1.png" style="display: block; margin: auto;" />
 
 ``` r
 generate_lines_and_polygons()
-#> Seed: 69503535
+#> Seed: 18553824
 ```
 
 <img src="man/figures/README-example2-1.png" style="display: block; margin: auto;" />
 
 ``` r
 generate_perception_matrix()
-#> Seed: 66726426
+#> Seed: 7125858
 ```
 
 <img src="man/figures/README-example3-1.png" style="display: block; margin: auto;" />
 
 ``` r
 generate_lines_and_rectangles()
-#> Seed: 26952219
+#> Seed: 11370795
 #> Warning: data frame results in `filter()` are deprecated, use `if_any()` or
 #> `if_all()`.
 
@@ -73,21 +73,21 @@ generate_lines_and_rectangles()
 
 ``` r
 generate_panels()
-#> Seed: 36586121
+#> Seed: 35372037
 ```
 
 <img src="man/figures/README-example5-1.png" style="display: block; margin: auto;" />
 
 ``` r
 generate_circles()
-#> Seed: 189831
+#> Seed: 52046822
 ```
 
 <img src="man/figures/README-example6-1.png" style="display: block; margin: auto;" />
 
 ``` r
 generate_string_waves()
-#> Seed: 54956492
+#> Seed: 49901406
 ```
 
 <img src="man/figures/README-example7-1.png" style="display: block; margin: auto;" />
