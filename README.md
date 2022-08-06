@@ -40,28 +40,28 @@ the functions!
 
 ``` r
 generate_fabric()
-#> Seed: 47097129
+#> Seed: 89430364
 ```
 
-<img src="man/figures/README-example1-1.png" width="50%" />
+<img src="man/figures/README-example1-1.png" width="300px" style="display: block; margin: auto;" />
 
 ``` r
 generate_lines_and_polygons()
-#> Seed: 76446359
+#> Seed: 2249020
 ```
 
-<img src="man/figures/README-example2-1.png" width="50%" />
+<img src="man/figures/README-example2-1.png" width="300px" style="display: block; margin: auto;" />
 
 ``` r
 generate_perception_matrix()
-#> Seed: 91724066
+#> Seed: 85416145
 ```
 
-<img src="man/figures/README-example3-1.png" width="50%" />
+<img src="man/figures/README-example3-1.png" width="300px" style="display: block; margin: auto;" />
 
 ``` r
 generate_lines_and_rectangles()
-#> Seed: 40969788
+#> Seed: 80696783
 #> Warning: data frame results in `filter()` are deprecated, use `if_any()` or
 #> `if_all()`.
 
@@ -69,25 +69,25 @@ generate_lines_and_rectangles()
 #> `if_all()`.
 ```
 
-<img src="man/figures/README-example4-1.png" width="50%" />
+<img src="man/figures/README-example4-1.png" width="300px" style="display: block; margin: auto;" />
 
 ``` r
 generate_panels()
-#> Seed: 82768026
+#> Seed: 21654946
 ```
 
-<img src="man/figures/README-example5-1.png" width="50%" />
+<img src="man/figures/README-example5-1.png" width="300px" style="display: block; margin: auto;" />
 
 ``` r
 generate_circles()
-#> Seed: 91324420
+#> Seed: 40596626
 ```
 
-<img src="man/figures/README-example6-1.png" width="50%" />
+<img src="man/figures/README-example6-1.png" width="300px" style="display: block; margin: auto;" />
 
 ``` r
 generate_string_waves()
-#> Seed: 89380387
+#> Seed: 7316453
 ```
 
-<img src="man/figures/README-example7-1.png" width="50%" />
+<img src="man/figures/README-example7-1.png" width="300px" style="display: block; margin: auto;" />
