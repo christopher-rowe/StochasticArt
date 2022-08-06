@@ -10,7 +10,8 @@ knitr::opts_chunk$set(
   comment = "#>",
   fig.path = "man/figures/README-",
   fig.align = "center",
-  fig.dim = c(2, 2),
+  fig.width = 2,
+  fig.height = 2,
   dpi = 300
 )
 ```
