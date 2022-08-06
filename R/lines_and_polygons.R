@@ -2,6 +2,7 @@
 #'
 #' @param num_shapes an integer value, number of points
 #' @param background 'white' or 'black'
+#' @param seed a numeric value, the seed to initialize psuedo-randomness
 #'
 #' @export
 #'

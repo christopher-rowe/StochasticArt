@@ -1,6 +1,7 @@
 #' Generate webs
 #'
 #' @param n an integer value, number of points
+#' @param seed a numeric value, the seed to initialize psuedo-randomness
 #'
 #' @export
 #'

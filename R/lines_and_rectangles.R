@@ -93,10 +93,9 @@ generate_lines_and_rectangles = function(num_lines, p_v_line, max_line_size,
     dplyr::filter(dplyr::across(.fns = ~ .x >= 0 & .x <= 1))
 
   # randomly pick a color pallete & assign line and rectange colors
-  data("palettes")
-  palette = palettes[[sample(1:length(palettes), 1)]]
-  line_color = sample(palette, 1)
-  rect_color = sample(palette[!palette == line_color], 1)
+  color_pool = get_random_color_pool(2)
+  line_color = color_pool[1]
+  rect_color = color_pool[2]
 
   # generate plot
   ggplot2::ggplot() +

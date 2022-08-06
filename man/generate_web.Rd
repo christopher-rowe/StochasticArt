@@ -8,6 +8,8 @@ generate_web(n = 50, seed)
 }
 \arguments{
 \item{n}{an integer value, number of points}
+
+\item{seed}{a numeric value, the seed to initialize psuedo-randomness}
 }
 \value{
 a random work of art as a ggplot object

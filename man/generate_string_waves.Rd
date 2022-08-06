@@ -20,6 +20,8 @@ generate_string_waves(
 \arguments{
 \item{num_waves}{an integer value >=1, the number of waves desired}
 
+\item{num_colors}{an integer value >=1, the number of colors desired}
+
 \item{wobbliness}{an integer value >=1, higher values will make the waves
 more wobbly (i.e. having peaks a trough of variable height); technically
 this is the number if individual sine functions that are summed together to get

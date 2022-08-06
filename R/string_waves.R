@@ -1,6 +1,7 @@
 #' Generate string waves
 #'
 #' @param num_waves an integer value >=1, the number of waves desired
+#' @param num_colors an integer value >=1, the number of colors desired
 #' @param wobbliness an integer value >=1, higher values will make the waves
 #' more wobbly (i.e. having peaks a trough of variable height); technically
 #' this is the number if individual sine functions that are summed together to get

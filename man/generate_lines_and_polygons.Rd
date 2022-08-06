@@ -10,6 +10,8 @@ generate_lines_and_polygons(num_shapes, background = "black", seed)
 \item{num_shapes}{an integer value, number of points}
 
 \item{background}{'white' or 'black'}
+
+\item{seed}{a numeric value, the seed to initialize psuedo-randomness}
 }
 \value{
 a random work of art as a ggplot object
