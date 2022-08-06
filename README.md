@@ -40,28 +40,28 @@ the functions!
 
 ``` r
 generate_fabric()
-#> Seed: 89430364
+#> Seed: 54418691
 ```
 
-<img src="man/figures/README-example1-1.png" width="300px" style="display: block; margin: auto;" />
+<img src="man/figures/README-example1-1.png" style="display: block; margin: auto;" />
 
 ``` r
 generate_lines_and_polygons()
-#> Seed: 2249020
+#> Seed: 69503535
 ```
 
-<img src="man/figures/README-example2-1.png" width="300px" style="display: block; margin: auto;" />
+<img src="man/figures/README-example2-1.png" style="display: block; margin: auto;" />
 
 ``` r
 generate_perception_matrix()
-#> Seed: 85416145
+#> Seed: 66726426
 ```
 
-<img src="man/figures/README-example3-1.png" width="300px" style="display: block; margin: auto;" />
+<img src="man/figures/README-example3-1.png" style="display: block; margin: auto;" />
 
 ``` r
 generate_lines_and_rectangles()
-#> Seed: 80696783
+#> Seed: 26952219
 #> Warning: data frame results in `filter()` are deprecated, use `if_any()` or
 #> `if_all()`.
 
@@ -69,25 +69,25 @@ generate_lines_and_rectangles()
 #> `if_all()`.
 ```
 
-<img src="man/figures/README-example4-1.png" width="300px" style="display: block; margin: auto;" />
+<img src="man/figures/README-example4-1.png" style="display: block; margin: auto;" />
 
 ``` r
 generate_panels()
-#> Seed: 21654946
+#> Seed: 36586121
 ```
 
-<img src="man/figures/README-example5-1.png" width="300px" style="display: block; margin: auto;" />
+<img src="man/figures/README-example5-1.png" style="display: block; margin: auto;" />
 
 ``` r
 generate_circles()
-#> Seed: 40596626
+#> Seed: 189831
 ```
 
-<img src="man/figures/README-example6-1.png" width="300px" style="display: block; margin: auto;" />
+<img src="man/figures/README-example6-1.png" style="display: block; margin: auto;" />
 
 ``` r
 generate_string_waves()
-#> Seed: 7316453
+#> Seed: 54956492
 ```
 
-<img src="man/figures/README-example7-1.png" width="300px" style="display: block; margin: auto;" />
+<img src="man/figures/README-example7-1.png" style="display: block; margin: auto;" />
