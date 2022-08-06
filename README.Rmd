@@ -1,0 +1,71 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# StochasticArt
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of StochasticArt is, naturally, to generate stochastic art! This package is really just a fun personal project, but perhaps it will find its way to some curious explorers who have not thought about ways in which R can be used to create visually interesting things.
+
+## Installation
+
+You can install the development version of StochasticArt from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("christopher-rowe/StochasticArt")
+```
+
+## Examples
+
+First, load the package.
+
+```{r load}
+library(StochasticArt)
+```
+
+Now try out some of the functions! If you don't specify a value to the `seed` argument, a random `seed` will be generated and printed to the console so that you can always regenerate a previous image.
+
+Not specifying any arguments will always generate a random image, but I encourage you to mess around with some of the arguments to see how the output changes. And even better, check out the code underlying each of the functions!
+
+```{r example1}
+generate_fabric()
+```
+
+```{r example2}
+generate_lines_and_polygons()
+```
+
+```{r example3}
+generate_perception_matrix()
+```
+
+```{r example4}
+generate_lines_and_rectangles()
+```
+
+```{r example5}
+generate_panels()
+```
+
+```{r example6}
+generate_circles()
+```
+
+```{r example7}
+generate_string_waves()
+```
+

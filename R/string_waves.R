@@ -89,6 +89,7 @@ generate_string_waves = function(num_waves, num_colors, wobbliness, frequency,
   # generate and append anchors so all waves converge, if specified
   y_anchor_x_min = all_data %>% dplyr::filter(x==0) %>% dplyr::pull(y) %>% mean()
   y_anchor_x_max = all_data %>% dplyr::filter(x==1) %>% dplyr::pull(y) %>% mean()
+  if(frame %in% c('points', 'circle')){anchor = TRUE}
   if(anchor){
 
     n_anchor = 100
@@ -122,7 +123,7 @@ generate_string_waves = function(num_waves, num_colors, wobbliness, frequency,
     {if(frame=='square'){
       ggplot2::geom_rect(ggplot2::aes(xmin=min(all_data$x),xmax=max(all_data$x),
                                       ymin=min(all_data$y)-0.1,ymax=max(all_data$y)+0.1),
-                         alpha = runif(1), fill = 'grey50', col = 'grey50')
+                         alpha = runif(1), fill = 'white', col = 'grey50')
     }} +
     ggplot2::geom_smooth(
       data = all_data,
